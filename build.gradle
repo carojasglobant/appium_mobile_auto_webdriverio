@@ -10,12 +10,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    implementation 'io.appium:java-client:10.0.0'
-    implementation 'org.testng:testng:7.12.0'
+    testImplementation('io.appium:java-client:10.0.0');
+    testImplementation('org.testng:testng:7.12.0') ;
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG {
+        preserveOrder = true
+    }
 }

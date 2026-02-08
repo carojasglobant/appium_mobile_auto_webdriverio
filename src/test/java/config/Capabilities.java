@@ -7,8 +7,9 @@ public class Capabilities {
 
     public static UiAutomator2Options getAndroidOptions() {
         return new UiAutomator2Options()
-                .setApp("")
-                .setDeviceName("")
+                .setApp("/Users/ca.rojas/Downloads/android.wdio.native.app.v2.0.0.apk")
+                .setDeviceName("pixel_8_pro")
+                .setAppActivity(".MainActivity")
                 .setPlatformVersion("16");
     }
 

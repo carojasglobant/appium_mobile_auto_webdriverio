@@ -23,7 +23,7 @@ public class BaseTest {
     @AfterMethod
     public void tearDown() {
         if (appiumDriver != null) {
-         this.appiumDriver.close();
+         this.appiumDriver.quit();
         }
     }
 

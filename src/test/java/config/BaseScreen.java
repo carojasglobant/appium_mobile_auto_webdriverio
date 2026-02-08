@@ -44,8 +44,8 @@ public class BaseScreen {
      * @param element Element to validate visibility
      * @return return true if the element is visible, false otherwise.
      */
-    public boolean isTheWebElementVisible(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(this.driver, Duration.ofSeconds(5));
+    public boolean isTheWebElementVisible(WebElement element, int seconds) {
+        WebDriverWait wait = new WebDriverWait(this.driver, Duration.ofSeconds(seconds));
         try {
             WebElement webElement = wait.until(ExpectedConditions.visibilityOf(element));
             return webElement != null;

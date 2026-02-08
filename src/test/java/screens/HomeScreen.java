@@ -14,5 +14,7 @@ public class HomeScreen extends BaseScreen {
         super(appiumDriver);
     }
 
-
+    public boolean isHomeScreenDisplayed() {
+        return isTheWebElementVisible(lblWebDriverTitle, 5);
+    }
 }
