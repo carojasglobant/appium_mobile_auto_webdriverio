@@ -9,7 +9,7 @@ public class Capabilities {
         return new UiAutomator2Options()
                 .setApp("")
                 .setDeviceName("")
-                .setPlatformVersion("");
+                .setPlatformVersion("16");
     }
 
     public static XCUITestOptions getIosOptions() {
